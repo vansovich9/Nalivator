@@ -35,6 +35,7 @@
 #include "encUniversalMinim.h"
 #include "buttonMinim.h"
 #include "timer2Minim.h"
+#include <Arduino.h>
 
 // ======== НАСТРОЙКИ ========
 #define NUM_SHOTS 4       // количество рюмок (оно же кол-во светодиодов и кнопок!)
