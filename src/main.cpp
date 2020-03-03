@@ -21,9 +21,14 @@ void setup()
   strip.show();
   DEBUG("strip init");
 
-  // настройка пинов
-  pinMode(PUMP_POWER, 1);
+  // настройка пинов помп
+  for (byte i = 0; i < PUMP_COUNT; i++)
+  {
+    pinMode(PUMP_POWER_PINS[i], 1);
+  }
+  //Настройка пиной для сервопривода
   pinMode(SERVO_POWER, 1);
+
   for (byte i = 0; i < NUM_SHOTS; i++)
   {
     pinMode(SW_pins[i], INPUT_PULLUP);

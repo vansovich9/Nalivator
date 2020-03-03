@@ -4,7 +4,7 @@
             "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags"
         },
         {
-            "name": "Win32", 
+            "name": "Win32",
             "includePath": [
                 "f:/Win7/ARDUINO/Nalivator/Nalivator/include",
                 "f:/Win7/ARDUINO/Nalivator/Nalivator/src",
@@ -41,7 +41,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=40100",
+                "PLATFORMIO=40201",
                 "ARDUINO_AVR_NANO",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
@@ -52,7 +52,11 @@
             "intelliSenseMode": "clang-x64",
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "\"C:/Users/Mark/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe\" -mmcu=atmega328p"
+            "compilerPath": "C:/Users/Mark/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
         }
     ],
     "version": 4
