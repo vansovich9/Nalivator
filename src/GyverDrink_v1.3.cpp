@@ -114,7 +114,7 @@ bool volumeChanged = false;
 #define servoON() digitalWrite(SERVO_POWER, 1)
 #define servoOFF() digitalWrite(SERVO_POWER, 0)
 #define pumpON(byte n) digitalWrite(PUMP_POWER_PINS[n], 1)
-#define pumpOFF() digitalWrite(PUMP_POWER_PINS, 0)
+#define pumpOFF(byte n) digitalWrite(PUMP_POWER_PINS[n], 0)
 
 #if (DEBUG_UART == 1)
 #define DEBUG(x) Serial.println(x)
